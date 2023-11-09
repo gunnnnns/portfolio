@@ -2,7 +2,7 @@ const Technique2 = () => {
   return (
     <div>
       <h1>Database</h1>
-      <img src="image/db.png" alt="react" />
+      <img src="https://gunnnnns.github.io/portfolio/image/db.png" alt="react" />
       <fieldset>
         <legend>Database</legend>
         <legend>개요</legend>

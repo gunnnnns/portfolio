@@ -2,7 +2,7 @@ const Technique1 = () => {
   return (
     <div>
       <h1>JAVA</h1>
-      <img src="image/java_logo.png" alt="react" />
+      <img src="https://gunnnnns.github.io/portfolio/image/java_logo.png" alt="react" />
       <fieldset>
         <legend>JAVA</legend>
           <legend>개요</legend>
