@@ -2,7 +2,7 @@ const Technique3 = () => {
   return (
     <div>
       <h1>Spring Framework</h1>
-      <img src="/image/SpringFramework.png" alt="react" />
+      <img src="https://gunnnnns.github.io/portfolio/../public/image/springframework.png" alt="react" />
       <fieldset>
         <legend>Spring Framework</legend>
         <legend>개요</legend>

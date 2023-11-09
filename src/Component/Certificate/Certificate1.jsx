@@ -2,7 +2,7 @@ const Certificate1 = () => {
   return (
     <div>
       <h1>OCP(Oracle Database Administrator)</h1>
-      <img src="/image/OCP.png" alt="react" />
+      <img src="image/ocp.png" alt="react" />
       <fieldset>
         <legend>OCP</legend>
         <ul>
