@@ -1,0 +1,32 @@
+#resume {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 20px auto; /* 상하 여백은 20px, 좌우는 자동으로 같게 설정 */
+  padding: 20px; /* 패딩도 같게 설정 */
+  border: 1px solid #ddd;
+  max-width: 1200px; /* 두 요소 모두 같은 최대 너비 */
+  width: 100%; /* 너비를 부모 요소에 맞게 100%로 설정 */
+  box-sizing: border-box; /* 테두리와 패딩을 너비에 포함 */
+}
+
+#resume table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#resume td, #resume th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#resume th {
+  background-color: #e3fcff;
+  color: #333;
+}
+
+#resume .pledge {
+  margin-top: 20px;
+  text-align: center;
+}

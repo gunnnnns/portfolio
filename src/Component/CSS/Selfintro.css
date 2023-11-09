@@ -1,0 +1,25 @@
+#selfIntro {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 20px auto; /* 상하 여백은 20px, 좌우는 자동으로 같게 설정 */
+  padding: 20px; /* 패딩도 같게 설정 */
+  border: 1px solid #ddd;
+  max-width: 1400px; /* 두 요소 모두 같은 최대 너비 */
+  width: 100%; /* 너비를 부모 요소에 맞게 100%로 설정 */
+  box-sizing: border-box; /* 테두리와 패딩을 너비에 포함 */
+}
+
+#selfIntro .division {
+  margin-bottom: 20px;
+}
+
+#selfIntro h3 {
+  color: #5a5a5a;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 3px;
+}
+
+#selfIntro p {
+  line-height: 1.6;
+  text-align: justify;
+}

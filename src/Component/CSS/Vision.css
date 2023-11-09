@@ -1,0 +1,14 @@
+#vision {
+  margin: auto;
+  max-width: 1200px; /* 최대 너비를 줄임 */
+  width: 100%;
+  font-size: 1.2em; /* 글씨 크기를 조정 */
+}
+
+fieldset {
+  display: block;
+  margin: auto;
+  max-width: 1200px; /* 최대 너비를 줄임 */
+  width: 100%;
+  font-size: 1.6em; /* 글씨 크기를 조정 */
+}
