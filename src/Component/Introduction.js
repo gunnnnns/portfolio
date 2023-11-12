@@ -1,15 +1,26 @@
 import { useState } from "react";
 import intros from "./Data/intros";
+import '../App.css';
 
 function Introduction() {
   const [index, setIndex] = useState(0);
+
   const contentChange = (event) => {
-    setIndex(event.target.value);
+    // 'value' 대신 'data-value' 속성을 사용
+    setIndex(parseInt(event.currentTarget.dataset.value));
   };
+
   return (
-    <div>
-      {intros.map((intro, index) => (
-        <button onClick={contentChange} value={index}>
+    <div id="introduction">
+      <div className="buttons"></div>
+      {intros.map((intro, idx) => (
+        <button
+          onClick={contentChange}
+          // 'value' 대신 'data-value' 속성을 사용
+          data-value={idx}
+          key={idx}
+          className="tab-link"
+        >
           {intro.tab}
         </button>
       ))}

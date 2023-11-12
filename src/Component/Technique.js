@@ -1,26 +1,29 @@
 import { useState } from "react";
 import techniques from "./Data/technique";
-import "./CSS/Technique.css";
+import "../App.css";
 
 function Technique() {
   const [index, setIndex] = useState(0);
   const contentChange = (event) => {
-    setIndex(event.target.value);
+    setIndex(parseInt(event.currentTarget.dataset.value));
   };
   return (
     <div id="technique">
-      <div className="buttons">
-        {techniques.map((technique, index) => (
-          <button onClick={contentChange} value={index} key={index}>
+      <div className="buttons"></div>
+        {techniques.map((technique, idx) => (
+          <button onClick={contentChange} 
+            data-value={idx}
+            key={idx} 
+            className="tab-link"
+          >
             {technique.tab}
           </button>
         ))}
-      </div>
-
-      <div className="content">
+        <br/><br/>
         {techniques[index].content}
       </div>
-    </div>
+
   );
 }
+
 export default Technique;

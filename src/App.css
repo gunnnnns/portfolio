@@ -17,82 +17,72 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 그림자 효과 추가 */
 }
 
-
-
-
 nav {
-  position: fixed; /* 네비게이션 바를 고정 */
-  top: 0; /* 상단에 맞춤 */
-  left: 0; /* 왼쪽에 맞춤 */
-  right: 0; /* 오른쪽에 맞춤 */
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: center; /* 가운데 정렬 */
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  color: black;
   background-color: black;
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  z-index: 1000; /* 다른 요소들 위에 놓임 */
+  z-index: 1000;
+  
 }
+
 .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 960px; /* 원하는 너비로 조정 */
-  padding: 0 15px; /* 좌우 패딩을 줄여서 총 너비를 조절 */
+  max-width: 960px;
+  padding: 0 15px;
   margin: 0 auto;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   list-style: none;
 }
-nav a {
-  margin: 0 10px; /* 링크 사이의 간격 */
-  text-decoration: none; /* 밑줄 제거 */
-  color: white; /* 링크 색상 */
-  padding: 15px 15px; /* 클릭 가능 영역 확장 */
-  white-space: nowrap; /* 링크가 여러 줄로 나눠지는 것 방지 */
+
+.nav-container > li {
+  position: relative;
 }
-nav a:hover {
-  color: black; 
+
+.nav-container li a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white; /* 텍스트 색상을 흰색으로 설정 */
+  padding: 15px 15px;
+  white-space: nowrap;
 }
-/* 현재 활성화된 링크에 대한 스타일 */
-nav a.active {
-  color: black;
+.active {
+  color: red; /* 활성화된 링크의 텍스트 색상을 변경 */
+  background-color: white; /* 배경색 변경 */
+}
+.nav-link:hover, .nav-link:active {
   background-color: white;
-
+  color: black;
+}
+a:link, a:visited {
+  background-color: black;
+  color: white; /* 링크 텍스트를 흰색으로 설정 */
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  font-size: 1em;
 }
 
-
-/* 나머지 스타일은 그대로 유지합니다. */
 
 
 footer {
   text-align: center;
   background-color: gray;
   color: white;
-  font-size: 50px; /* 더 줄임 */
-  padding: 10px; /* 여백 추가 */
+  font-size: 25px; /* 텍스트 크기 줄임 */
+  padding: 20px 10px; /* 상하 여백 20px, 좌우 여백 10px */
+  bottom: 0;
 }
-
-a:link, a:visited {
-  background-color: black;
-  padding: 5px 10px; /* 더 줄임 */
-  text-decoration: none;
-  display: inline-block;
-  width: 200px; /* 더 줄임 */
-  font-size: 1em; /* 더 줄임 */
-}
-
-a:hover, a:active {
-  background-color: white;
-  color: white;
-}
-
-.menu-wrapper {
-  overflow-x: auto; /* 가로 스크롤 가능 */
-  white-space: nowrap; /* 메인 버튼들이 세로로 쌓이지 않도록 */
-}
-
 
 .login-form {
   display: flex;
@@ -117,6 +107,26 @@ a:hover, a:active {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* App.css 또는 Technique.css 등에 추가 */
+.tab-link {
+  background-color: black; /* 버튼 배경색 */
+  border: 1px solid #ddd; /* 테두리 스타일 */
+  color: white;
+  padding: 10px 20px; 
+  margin: 5px; 
+  cursor: pointer;
+  transition: background-color 1s; 
+}
+
+.tab-link:hover {
+  background-color: white; /* 호버 시 배경색 변경 */
+  color: black
+}
+.tab-link.active {
+  background-color: black;
+  color: white;
 }
 
 
